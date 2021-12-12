@@ -22,7 +22,7 @@ const ResponsiveAppBar = () => {
     <Box sx={{ background: "white" }}>
       <Container>
         <Box position="static">
-          <Container maxWidth="xl">
+          <Box maxWidth="xl">
             <Toolbar disableGutters>
               <Typography
                 variant="h6"
@@ -43,11 +43,6 @@ const ResponsiveAppBar = () => {
               </Typography>
 
               {/* menu start */}
-              <MenuBar
-                anchorElNav={anchorElNav}
-                handleCloseNavMenu={handleCloseNavMenu}
-                handleOpenNavMenu={handleOpenNavMenu}
-              ></MenuBar>
               <Typography
                 variant="h6"
                 noWrap
@@ -60,12 +55,17 @@ const ResponsiveAppBar = () => {
                   display: {
                     xs: "flex",
                     md: "none",
-                    justifyContent: "end",
+                    justifyContent: "start",
                   },
                 }}
               >
                 Devwear
               </Typography>
+              <MenuBar
+                anchorElNav={anchorElNav}
+                handleCloseNavMenu={handleCloseNavMenu}
+                handleOpenNavMenu={handleOpenNavMenu}
+              ></MenuBar>
 
               {/* menu end */}
 
@@ -109,7 +109,7 @@ const ResponsiveAppBar = () => {
                 </Link>
               </Box>
             </Toolbar>
-          </Container>
+          </Box>
         </Box>
       </Container>
     </Box>

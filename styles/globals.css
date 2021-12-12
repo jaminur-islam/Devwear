@@ -13,26 +13,29 @@ body {
 }
 
 /* Banner style  */
-.banner_container {
-  display: flex;
-  justify-content: space-between;
+.banner-container {
+  margin-top: 20px;
 }
 
-.left-side {
-  margin-top: 100px;
-}
-.left-side p {
-  width: 50%;
+.banner-content {
 }
 
-.right-side {
-  margin-top: 10px;
-  margin-right: 200px;
+.banner_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
 }
 
-.right-side-content {
-  width: 400px;
-  height: 500px;
-  background-color: red;
-  position: relative;
+.banner-container h1 {
+  font-size: 50px;
+}
+
+.banner-container p {
+  width: 76%;
+  line-height: 22px;
+  margin: 10px 0;
+}
+
+.banner_left_side {
+  margin-top: 80px;
 }
